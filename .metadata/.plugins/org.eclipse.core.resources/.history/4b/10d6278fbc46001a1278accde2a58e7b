@@ -28,8 +28,8 @@ public class app1 {
 	public static void ej2()
 	{
 		ColaPrioridadTDA A = new ColaPrioridad();
-		A.inicializar();
-		A.acolar(1, 1);
+		A.inicializar();();
+		A.acolar(x);(1, 1);
 		A.acolar(2, 2);
 		A.acolar(3, 11);
 		A.acolar(5, 5);
@@ -38,9 +38,9 @@ public class app1 {
 		A.acolar(10, 10);
 
 		
-		while (!A.colavacia()) {
-			System.out.println(A.primero() + " " +  A.prioridad());
-			A.desacola();
+		while (!A.colavacia()()) {
+			System.out.println(A.primero()() + " " +  A.prioridad()());
+			A.desacola();();
 
 		}
 	}

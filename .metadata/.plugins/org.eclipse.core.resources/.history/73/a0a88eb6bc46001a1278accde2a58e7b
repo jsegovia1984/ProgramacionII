@@ -10,7 +10,7 @@ public class ColaPrioridad implements ColaPrioridadTDA {
 	}
 
 	
-	public void acolar(int x, int y) {
+	public void acolar(int x) {
 
 	}
 

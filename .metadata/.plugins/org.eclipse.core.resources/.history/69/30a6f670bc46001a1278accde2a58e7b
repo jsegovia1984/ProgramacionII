@@ -1,6 +1,5 @@
 package MisApp;
 
-import Api.ColaPrioridadTDA;
 import Api.PilaTDA;
 import MisImplementaciones.Estaticas.*;
 
@@ -27,20 +26,20 @@ public class app1 {
 	
 	public static void ej2()
 	{
-		ColaPrioridadTDA A = new ColaPrioridad();
-		A.inicializar();
-		A.acolar(1, 1);
-		A.acolar(2, 2);
-		A.acolar(3, 11);
-		A.acolar(5, 5);
-		A.acolar(1, 3);
-		A.acolar(2, 6);
-		A.acolar(10, 10);
+		ColaConPrioridad A = new ColaPrioridad();
+		A.InicializarCola();
+		A.AcolarPrioridad(1, 1);
+		A.AcolarPrioridad(2, 2);
+		A.AcolarPrioridad(3, 11);
+		A.AcolarPrioridad(5, 5);
+		A.AcolarPrioridad(1, 3);
+		A.AcolarPrioridad(2, 6);
+		A.AcolarPrioridad(10, 10);
 
 		
-		while (!A.colavacia()) {
-			System.out.println(A.primero() + " " +  A.prioridad());
-			A.desacola();
+		while (!A.ColaVacia()) {
+			System.out.println(A.Primero() + " " +  A.Prioridad());
+			A.Desacolar();
 
 		}
 	}
