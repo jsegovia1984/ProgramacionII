@@ -3,12 +3,10 @@ package MisImplementaciones.Estaticas;
 import Api.ColaPrioridadTDA;
 
 public class ColaPrioridad implements ColaPrioridadTDA {
-    int tam;
-    Nodo vector [];
+
 	
 	public void inicializar() {
-		vector = new Nodo[100]; 
-		tam=0;
+
 	}
 
 	
@@ -35,11 +33,6 @@ public class ColaPrioridad implements ColaPrioridadTDA {
 	public boolean colavacia() {
 
 		return false;
-	}
-	
-	private class Nodo {
-		int pri;
-		int d;
 	}
 
 }

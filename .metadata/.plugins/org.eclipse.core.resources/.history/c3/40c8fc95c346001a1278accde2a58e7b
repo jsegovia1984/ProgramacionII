@@ -41,9 +41,8 @@ public class app1 {
 		;while (!A.colavacia()) {
 			System.out.println(A.primero() + " " +  A.prioridad());
 			A.desacola();
-
-		}*/
-		
+*/
+		}
 	}
 	public static void E3() {
 	
