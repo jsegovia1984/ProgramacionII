@@ -18,24 +18,23 @@ public class ColaPrioridad implements ColaPrioridadTDA {
 
 	
 	public void desacola() {
-		tam--;
 
 	}
 
 	
 	public int primero() {
-		return vector[tam-1].d;
+		return 0;
 	}
 
 	
 	public int prioridad() {
-		return vector[tam-1].pri;
+		return 0;
 	}
 
 	
 	public boolean colavacia() {
 
-		return tam==0;
+		return false;
 	}
 	
 	private class Nodo {

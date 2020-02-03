@@ -24,12 +24,12 @@ public class ColaPrioridad implements ColaPrioridadTDA {
 
 	
 	public int primero() {
-		return vector[tam-1].d;
+		return vecto[tam-1].d;
 	}
 
 	
 	public int prioridad() {
-		return vector[tam-1].pri;
+		return vecto[tam-1].pri;
 	}
 
 	

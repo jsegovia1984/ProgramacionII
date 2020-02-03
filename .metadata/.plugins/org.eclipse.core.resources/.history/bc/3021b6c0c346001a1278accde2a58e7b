@@ -28,8 +28,7 @@ public class app1 {
 	public static void E2()
 	{
 		ColaPrioridadTDA A = new ColaPrioridad();
-		A.inicializar();
-		/*
+		/*A.inicializar();
 		A.acolar(1, 1);
 		A.acolar(2, 2);
 		A.acolar(3, 11);
