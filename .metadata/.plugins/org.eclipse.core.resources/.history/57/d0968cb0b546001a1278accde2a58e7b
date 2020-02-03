@@ -1,0 +1,26 @@
+package MisApp;
+
+import Api.PilaTDA;
+import MisImplementaciones.Estaticas.*;
+
+public class app1 {
+
+	public static void main(String[] args) {
+		E1();;
+	
+	}
+
+	private void class E1 {
+		PilaTDA X = new Pila();
+		X.inicializar();
+		X.apilar(1);
+		X.apilar(2);
+		X.apilar(3);
+		while(!X.pilavacia())
+		{
+			System.out.println(X.tope());
+			X.desapilar();
+		}
+	}
+}
+
