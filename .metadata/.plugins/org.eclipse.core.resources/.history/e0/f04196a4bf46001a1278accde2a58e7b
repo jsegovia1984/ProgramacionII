@@ -25,7 +25,7 @@ public class app1 {
 		}
 	}
 	
-	public static void E2()
+	public static void ej2()
 	{
 		ColaPrioridadTDA A = new ColaPrioridad();
 		A.inicializar();
@@ -43,9 +43,6 @@ public class app1 {
 			A.desacola();
 
 		}
-	}
-	public static void E3() {
-		
 	}
 }
 
