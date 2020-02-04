@@ -29,10 +29,9 @@ public class Cola implements ColaTDA {
 		}
 		else
 		{
-			ultimo.sig=nuevo;
+			ultimo.sig=nuevo
 		}
 		ultimo=nuevo;
-		ultimo.sig=null;
 		tam++;
 
 	}

@@ -32,7 +32,6 @@ public class Cola implements ColaTDA {
 			ultimo.sig=nuevo;
 		}
 		ultimo=nuevo;
-		ultimo.sig=null;
 		tam++;
 
 	}

@@ -7,8 +7,10 @@ import MisImplementaciones.Dinamicas.*;
 public class app1 {
 
 	public static void main(String[] args) {
-		E3();
+		E1();
 	}
+	
+
 	
 
 	public static void E1() {
@@ -56,9 +58,6 @@ public class app1 {
 			System.out.println(A.primero());
 			A.desacolar();
 		}
-		
-		A.acolar(3);
-
 	}
 }
 

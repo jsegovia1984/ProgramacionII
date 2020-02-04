@@ -29,23 +29,16 @@ public class Cola implements ColaTDA {
 		}
 		else
 		{
-			ultimo.sig=nuevo;
+			ultimo.sig=nuevo
 		}
 		ultimo=nuevo;
-		ultimo.sig=null;
 		tam++;
 
 	}
 
 	public void desacolar() {
-		primero = primero.sig;
+		primero = primero.ant
 		tam--;
-		if(this.colavacia()) {
-			primero=null;
-			ultimo=null;
-			
-		}
-			
 
 	}
 

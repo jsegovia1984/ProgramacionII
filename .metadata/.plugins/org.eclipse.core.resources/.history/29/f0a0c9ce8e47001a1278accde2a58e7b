@@ -55,8 +55,8 @@ public class app1 {
 		while (!A.colavacia()) {
 			System.out.println(A.primero());
 			A.desacolar();
-		}
 		
+		}
 		A.acolar(3);
 
 	}
