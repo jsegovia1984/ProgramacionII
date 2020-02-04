@@ -3,7 +3,8 @@ package MisImplementaciones.Estaticas;
 import Api.ColaPrioridadTDA;
 
 public class ColaPrioridad implements ColaPrioridadTDA {
-    int tam;
+    
+	int tam;
     Nodo vector [];
 	
 	public void inicializar() {

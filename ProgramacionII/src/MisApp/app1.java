@@ -1,15 +1,16 @@
 package MisApp;
 
-import Api.ColaPrioridadTDA;
-import Api.PilaTDA;
-import MisImplementaciones.Estaticas.*;
+import Api.*;
+
+import MisImplementaciones.Dinamicas.*;
 
 public class app1 {
 
 	public static void main(String[] args) {
-		E2();
-	
+		E1();
 	}
+	
+
 	
 
 	public static void E1() {
@@ -47,8 +48,16 @@ public class app1 {
 		
 	}
 	public static void E3() {
-	
+		ColaTDA A = new Cola();
+		A.inicializar();
+		A.acolar(1);
+		A.acolar(2);
+		A.acolar(3);
 		
+		while (!A.colavacia()) {
+			System.out.println(A.primero());
+			A.desacolar();
+		}
 	}
 }
 

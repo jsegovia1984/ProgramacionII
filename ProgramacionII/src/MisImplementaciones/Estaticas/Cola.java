@@ -1,4 +1,5 @@
 package MisImplementaciones.Estaticas;
+
 import Api.ColaTDA;
 
 public class Cola implements ColaTDA {
@@ -6,7 +7,7 @@ public class Cola implements ColaTDA {
 	int vector[];
 	int tam;
 
-	public void inicializarCola() {
+	public void inicializar() {
 		vector = new int[100];
 		tam = 0;
 	}
@@ -26,9 +27,9 @@ public class Cola implements ColaTDA {
 	public int primero() {
 		return vector[0];
 	}
-
-	public boolean ColaVacia() {
-		return false;
+	
+	public boolean colavacia() {
+		return tam==0;
 	}
 
 }

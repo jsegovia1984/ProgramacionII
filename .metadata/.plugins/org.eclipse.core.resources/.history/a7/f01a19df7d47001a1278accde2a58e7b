@@ -1,0 +1,40 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.PilaTDA;
+
+public class Pila implements PilaTDA {
+	
+	public class Nodo{
+		int d;
+		Nodo sig;
+	}
+	
+	int tam;
+	Nodo actual = new Nodo();
+	
+	public void inicializar() {
+	tam=0;
+	actual = null;
+	}
+
+	@Override
+	public void apilar(int x) {
+
+	}
+
+	@Override
+	public void desapilar() {
+
+	}
+
+	@Override
+	public int tope() {
+		return 0;
+	}
+
+	@Override
+	public boolean pilavacia() {
+		return Actual == null;
+	}
+
+}

@@ -1,0 +1,46 @@
+package MisImplementaciones.Estaticas;
+
+import Api.ColaPrioridadTDA;
+
+public class ColaPrioridad implements ColaPrioridadTDA {
+    int tam;
+    Nodo vector [];
+	
+	public void inicializar() {
+		vector = new Nodo[100]; 
+		tam=0;
+	}
+
+	
+	public void acolar(int x, int y) {
+
+	}
+
+	
+	public void desacola() {
+		tam--;
+
+	}
+
+	
+	public int primero() {
+		return vector[tam-1].d;
+	}
+
+	
+	public int prioridad() {
+		return vector[tam-1].pri;
+	}
+
+	
+	public boolean colavacia() {
+
+		return tam==0;
+	}
+	
+	private class Nodo {
+		int pri;
+		int d;
+	}
+
+}
