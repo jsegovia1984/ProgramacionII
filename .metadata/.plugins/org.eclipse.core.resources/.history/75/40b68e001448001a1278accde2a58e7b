@@ -1,0 +1,32 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.ConjuntoTDA;
+import Api.DiccionarioSimpleTDA;
+
+public class DiccionarioSimple implements DiccionarioSimpleTDA {
+
+	public void Inicializar() {
+
+	}
+
+	public void Agregar(int c, int v) {
+
+	}
+
+	public ConjuntoTDA Claves() {
+		return null;
+	}
+
+	public int Recuperar(int c) {
+		return 0;
+	}
+
+	public void EliminarClave(int c) {
+
+	}
+
+	public void EliminarValor(int c, int v) {
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.ConjuntoTDA;
+import Api.DiccionarioSimpleTDA;
+
+public class DiccionarioSimple implements DiccionarioSimpleTDA {
+	
+	class nodo{
+		int clave;
+		int valor;
+		nodo sig;
+	}
+	
+	nodo inicio = new nodo();
+	
+	public void Inicializar() {
+	
+	inicio = null;
+	
+	}
+
+	public void Agregar(int c, int v) {
+
+	}
+
+	public ConjuntoTDA Claves() {
+		return null;
+	}
+
+	public int Recuperar(int c) {
+		nodo aux = this.BuscarClave(c);
+		return aux.valor;
+	}
+
+	public void EliminarClave(int c) {
+
+	}
+
+	public void EliminarValor(int c, int v) {
+
+	}
+	
+	private nodo BuscarClave(int c) {
+		nodo aux = new nodo();
+		aux = inicio;
+		while(aux != null && aux.clave != c) 
+			aux	= aux.sig;
+		
+		return aux;
+		
+		}
+	
+}

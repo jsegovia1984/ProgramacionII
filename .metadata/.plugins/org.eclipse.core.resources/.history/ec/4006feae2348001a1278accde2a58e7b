@@ -1,0 +1,79 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.ConjuntoTDA;
+import Api.DiccionarioSimpleTDA;
+
+public class DiccionarioSimple implements DiccionarioSimpleTDA {
+	
+	class nodo{
+		int clave;
+		int valor;
+		nodo sig;
+	}
+	
+	nodo inicio = new nodo();
+	
+	public void Inicializar() {
+	
+	inicio = null;
+	
+	}
+
+	public void Agregar(int c, int v) {
+		 nodo actual = BuscarClave(c)
+				 if (actual!=null)
+					 actual.clave=c;
+				 else
+				 {
+					 nodo nuevo = new nodo();
+					 nuevo.clave=c;
+					 nuevo.valor=v;
+					 nuevo.sig=inicio;
+					 inicio = nuevo;
+		}
+	}
+
+	public ConjuntoTDA Claves() {
+		
+		return null;
+	}
+
+	public int Recuperar(int c) {
+		nodo aux = this.BuscarClave(c);
+		return aux.valor;
+	}
+
+	public void EliminarClave(int c) {
+		nodo ant=null, act=inicio;
+		while (act!=null && act!=c) {
+			ant=act;
+			act=act.sig;
+		}
+		if (act!=null) { //si actual es distinto de null es porque se encontro la clave
+			if (ant==null) { //si anterior es igual a null quiere decir que es el primero elemento o unico
+				inicio=inicio.sig; // el segundo pasa a ser el primero o null en caso de ser un solo elemento			
+			}
+			else
+			{
+				ant.sig=act.sig;
+						
+			}
+			
+		}
+			
+		
+
+	}
+
+	
+	private nodo BuscarClave(int c) {
+		nodo aux = new nodo(); // Se crea un nodo aux para recorrer la lista sin destruirla 
+		aux = inicio;
+		while(aux != null && aux.clave != c) 
+			aux	= aux.sig;
+		
+		return aux;
+		
+		}
+	
+}

@@ -1,0 +1,38 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.ConjuntoTDA;
+import Api.DiccionarioMultipleTDA;
+
+public class DiccionarioMultiple implements DiccionarioMultipleTDA {
+
+	@Override
+	public void Inicializar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void Agregar(int c, int v) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ConjuntoTDA Claves() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ConjuntoTDA Recuperar(int c) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void Eliminar(int c) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

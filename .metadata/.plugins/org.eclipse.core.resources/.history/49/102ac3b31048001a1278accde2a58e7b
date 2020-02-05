@@ -1,0 +1,44 @@
+package MisImplementaciones.Dinamicas;
+
+import Api.ConjuntoTDA;
+import Api.DiccionarioSimpleTDA;
+
+public class DiccionarioSimple implements DiccionarioSimpleTDA {
+
+	@Override
+	public void Inicializar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void Agregar(int c, int v) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ConjuntoTDA Claves() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int Recuperar(int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void EliminarClave(int c) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void EliminarValor(int c, int v) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
