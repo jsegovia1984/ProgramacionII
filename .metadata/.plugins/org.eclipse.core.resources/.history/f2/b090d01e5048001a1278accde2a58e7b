@@ -66,38 +66,10 @@ public class DiccionarioMultiple implements DiccionarioMultipleTDA {
 		}
 	}
 	
-	public void EliminarValor(int c, int v) {
-		
-		nodo_clave actual = this.Buscar_Clave(c);
-		if (actual!= null)
-		{
-			nodo_valor actual_valor = actual.inicio_valor, anterior_valor=null;
-		
-			while (actual_valor != null && actual_valor.v!=c)
-			{
-				anterior_valor = actual_valor;
-				actual_valor = actual_valor.sig;
-				
-			}	
+	public ConjuntoTDA claves() {
+	
 			
-				if (actual_valor!=null) // encontro el elemento
-				{
-					if (anterior_valor==null) 
-						inicio.inicio_valor = inicio.inicio_valor.sig; // en caso de que sea el primero o unico
-					else
-						anterior_valor.sig = actual_valor.sig;
-
-				}
-				
-				if(inicio.inicio_valor==null) 
-					this.Eliminar(c);
-				
-			
-		}
-	}
-			
-	private nodo_clave Buscar_Clave(int c) 
-	{
+	public nodo_clave Buscar_Clave(int c) {
 		nodo_clave actual;
 		actual=inicio;
 		
@@ -105,8 +77,11 @@ public class DiccionarioMultiple implements DiccionarioMultipleTDA {
 			actual=actual.sig;
 		}
 		return actual;	
-
-
+		
+		
+		
+		
+	}
 	}
 
 }
