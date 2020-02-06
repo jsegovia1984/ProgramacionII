@@ -25,7 +25,20 @@ public class DiccionarioMultiple implements DiccionarioMultipleTDA {
 
 	
 	public void Agregar(int c, int v) {
-
+		nodo_clave aux = this.Buscar_Clave(c);
+		if (aux==null) {
+			nodo_clave nuevo = new nodo_clave();
+			nuevo.c=c;
+			nuevo.inicio_valor=null;
+			nuevo.sig=inicio;
+			inicio=nuevo;
+			aux=inicio; // consultar si se puede igualar a nuevo
+			
+			
+			
+			
+			
+		}
 	}
 
 	public ConjuntoTDA Claves() {

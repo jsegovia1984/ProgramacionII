@@ -1,4 +1,6 @@
 package MisApp;
+import Herramientas.*;
+import MisApp.*;
 
 import Api.*;
 
@@ -7,9 +9,34 @@ import MisImplementaciones.Dinamicas.*;
 public class app1 {
 
 	public static void main(String[] args) {
-		E3();
+		ejer1();
 	}
 	
+	
+	public static void ejer1(){
+		int suma, cont;
+		float prom;
+		PilaTDA A = new Pila();
+		PilaTDA C1 = new Pila();
+		PilaTDA C2 = new Pila();
+		C1.inicializar();
+		C2.inicializar();
+		A.inicializar();
+		
+		A.apilar(3);
+		A.apilar(4);
+		A.apilar(5);
+		A.apilar(4);
+		A.apilar(4);
+		Tp1.copiarPilaPila(C1, A);
+	    suma = Tp1.SumarPila(C1);
+		Tp1.copiarPilaPila(C2, A);
+		cont = Tp1.ContarPila(C2);
+		prom = Tp1.PromedioPila(A);
+		System.out.println("la pila contine " + cont + " elementos y su suma es: " + suma );
+		System.out.println("El promedio de los valores de la pila es: " + prom);
+		
+	}
 
 	public static void E1() {
 		PilaTDA X = new Pila();

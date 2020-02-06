@@ -20,16 +20,17 @@ public class Pila implements PilaTDA {
 	public void apilar(int x) {
 		Nodo nuevo = new Nodo();
 		nuevo.sig = actual;
-		nuevo.d =x;
+		nuevo.d = x;
 		actual = nuevo;
 		tam++;
 	}
 
 	
 	public void desapilar() {
-		if(!pilavacia()) // podria poner la pre condicion de que se supone no debe estar vacia la pila 
+		if(!pilavacia()) {// podria poner la pre condicion de que se supone no debe estar vacia la pila 
 			actual = actual.sig;
 			tam--;
+		}
 		
 	}
 
